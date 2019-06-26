@@ -32,6 +32,8 @@ Here's a walkthrough of implemented user stories:
 
 GIF created with [LiceCap](http://g.recordit.co/lvCE5yVmtq.gif).
 
+http://g.recordit.co/lvCE5yVmtq.gif
+
 ## Notes
 
 It took a bit of time to disvcover how to use if statements and declare functions. It was also complicated to understand how pixels work at the screen. I had a hard time trying to move a text field up and down, until i realized it was easier to set a position to which the field would begin and end after movement. 
