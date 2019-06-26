@@ -34,23 +34,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="REL-9l-1iF">
-                                <rect key="frame" x="66" y="318" width="34" height="30"/>
+                                <rect key="frame" x="66" y="318" width="43" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <fontDescription key="fontDescription" name="GujaratiSangamMN" family="Gujarati Sangam MN" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4pc-m4-cWc">
-                                <rect key="frame" x="196" y="323" width="119" height="21"/>
+                                <rect key="frame" x="196" y="318" width="119" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <fontDescription key="fontDescription" name="GujaratiSangamMN" family="Gujarati Sangam MN" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NlD-JG-qNH">
-                                <rect key="frame" x="205" y="400" width="110" height="21"/>
+                                <rect key="frame" x="205" y="398" width="110" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <fontDescription key="fontDescription" name="GujaratiSangamMN" family="Gujarati Sangam MN" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -68,17 +68,17 @@
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MT7-yh-A8O">
-                                <rect key="frame" x="66" y="400" width="52" height="33"/>
+                                <rect key="frame" x="66" y="400" width="103" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <fontDescription key="fontDescription" name="GujaratiSangamMN" family="Gujarati Sangam MN" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Bill Amount" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TQI-d6-Tb6">
-                                <rect key="frame" x="18" y="291" width="339" height="85"/>
+                                <rect key="frame" x="18" y="332" width="339" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="0.1343690438" green="0.44699238990000001" blue="0.156727535" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <fontDescription key="fontDescription" name="GujaratiSangamMN" family="Gujarati Sangam MN" pointSize="40"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
                                     <action selector="onEdit:" destination="BYZ-38-t0r" eventType="editingChanged" id="WMC-DY-w9h"/>
@@ -92,7 +92,18 @@
                             <outletCollection property="gestureRecognizers" destination="vcF-hG-Qaf" appends="YES" id="ebe-fK-S8X"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Tips" id="efr-Pw-n7N"/>
+                    <navigationItem key="navigationItem" title="Tips" id="efr-Pw-n7N">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" style="plain" id="21n-be-7Zq">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IK9-gV-wry">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="SETTINGS"/>
+                                <connections>
+                                    <segue destination="Kux-xd-nAw" kind="show" id="EBA-NA-1s6"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="billField" destination="TQI-d6-Tb6" id="Fn8-6A-NG2"/>
                         <outlet property="tipControl" destination="okD-8Y-8Nd" id="Xgi-LR-a5r"/>
@@ -110,6 +121,29 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="957.60000000000002" y="20.239880059970016"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="SKy-Ca-lJE">
+            <objects>
+                <viewController id="Kux-xd-nAw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eq8-k4-saB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vN5-Fp-n0e">
+                                <rect key="frame" x="40" y="236" width="295" height="123"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Settings to Come"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="kGA-yh-oGJ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Th-DJ-sxa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1757.5999999999999" y="19.340329835082461"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Yn7-r5-d7q">
